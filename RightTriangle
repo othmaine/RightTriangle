@@ -1,0 +1,31 @@
+
+package rightTriangle;
+import java.util.Scanner;
+import java.util.InputMismatchException; 
+public class RightTriangle {
+
+    
+    public static void main(String[] args) {
+        
+        Scanner x = new Scanner (System.in);
+        System.out.print("Enter the hiegh :"  );
+        try
+        {
+        byte hieght = x.nextByte();
+        
+        for (int counter1=0; counter1<hieght;counter1++)
+        {
+            for(int counter2=0; counter2<counter1;counter2++)
+            {
+                System.out.print("*  ");
+            }
+            System.out.println(" ");
+        }
+        }
+        catch(InputMismatchException e)
+        {
+            System.err.print("Enter a number only");
+        }
+    }
+    
+}
